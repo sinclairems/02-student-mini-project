@@ -1,0 +1,130 @@
+/*html {
+    box-sizing: border-box;
+}*/
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+    background-color: rgb(30, 36, 36);
+}
+
+h1 {
+    color: rgb(174, 13, 196);
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.p1 {
+    color: #fff;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    width: calc(100% - 120px);
+    height: auto;
+    text-align: center;
+}
+
+.wire-frame-boxes {
+        margin-top: 2%;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(12. 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+.card-header {
+    padding: 0 0 0 7px;
+    margin: 0;
+    position: relative;
+    margin-top: -20px;
+    margin-left: 13.5px;
+    max-width: 90%;
+    border: 2px solid #fff;
+    color: rgb(174, 13, 196);
+    background-color: rgb(30, 36, 36);
+}
+
+.code-card {
+    margin: 10px;
+    width: 350px;
+    height: auto;
+    border: 2px dotted #fff;
+}
+
+.card-content {
+    padding: 0px 10px 0px 10px;
+    color: rgb(174, 13, 196);
+}
+
+.pre {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 2%;
+    -webkit-user-select: all; user-select:all;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
+    box-shadow: inset 0px 0px 8px rgab(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+::selection {
+    background-color: #e866ec;
+    color: #fff;
+}
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgab(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color:rgb(174, 13, 196);
+}
+
+/* Add @media queries like ...
+
+@media (max-width: 768px) {
+    .something {
+
+    }
+
+    .somethingelse {
+
+    }
+
+    .etc {
+
+    }
+}
+
+If things start to overflow, see here
+
+You might have noticed the keys 
+collapse when the browser window is 
+smaller than 768px. Set overflow to 
+hidden in the first .keys selector, 
+to take care of this issue. 
+This property will hide any element 
+that is pushed outside the set width 
+value of .keys.
+
+We can also use <and> in media queries
+
+@media (min-width: 500px) and (max-width: 100px) {
+
+}
+*/

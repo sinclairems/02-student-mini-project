@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Snippet Sheet</title>
+</head>
+<body>
+<main>
+
+<!--HEADER-->
+<header>
+    <h1>CSS Snippet Cheatsheet</h1>
+    <p class="p1">Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
+</header>
+
+<!--WIREFRAME BOXES-->
+
+<div class="wire-frame-boxes">
+
+<!--CARD 1-->
+<div class="code-card">
+    <div class="card-header"><h2>Flexbox Row</h2></div>
+        <p class="card-content">Use these three properties to create a Flexbox row layout.</p>
+            <div class="pre">
+                <pre id="items"><code>
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+                </code></pre>
+            </div> 
+</div>
+
+<!--CARD 2-->
+<div class="code-card">
+    <div class="card-header"><h2>Flexbox Column</h2></div>
+        <p class="card-content">Use this to create a Flexbox column layout.</p>
+            <div class="pre">
+                <pre><code>
+    .column {
+        display: flex;
+        flex-direction: column;
+      }
+            </code></pre>
+                </div>          
+</div>
+
+<!--CARD 3-->
+<div class="code-card">
+    <div class="card-header"><h2>CSS Grid Layout</h2></div>
+        <p class="card-content">Build a 12-Column layout using CSS Grid.</p>
+            <div class="pre">    
+                <pre><code>
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(12. 1fr);
+      }
+                </code></pre>
+            </div>
+</div>
+
+<!--CARD 4--> 
+<div class="code-card"> 
+    <div class="card-header"><h2>Linear Gradients</h2></div>
+        <p class="card-content">This will create a background linear gradient from top to bottom.</p>
+            <div class="pre">
+                <pre><code>
+    .linear-gradient-background {
+        background-image: linear-
+        gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+        ) ;
+      }
+                </code></pre>
+            </div>
+</div>
+
+<!--CARD 5-->
+<div class="code-card">
+    <div class="card-header"><h2>Box Transition Glow</h2></div>
+        <p class="card-content">Use transition and box shadows to glow on hover.</p>
+            <div class="pre">
+                <pre><code>
+    .code-card .card-header {
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+      }
+
+    .code-card:hover,
+    .code-card:hover .card-header {
+        box-shadow: inset 0px 0px 8px
+        rgab(232, 102, 236, 1), 0 0 15px
+        rgba(232, 102, 236, 1);
+      }
+                </code></pre>
+            </div>
+</div>
+
+<!--CARD 6-->
+<div class="code-card">
+    <div class="card-header"><h2>Overlay Card with Title</h2></div>
+        <p class="card-content">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            <div class="pre">   
+                <pre><code>
+    .card-header {
+        position: relative;
+        margin-top: -20px;
+      }
+                </code></pre>
+            </div> 
+</div>
+</div>    
+</main>
+
+<!--FOOTER-->
+<footer>
+    <h3>Made with ❤️️ and CSS</h3>
+</footer>
+</body>
+</html>
+
+<!--This code enables the user to click on some text once and 
+select it all at once 
+HTML
+
+<p class="all">User-select-ALL</p>
+<p>User-select-none</p>
+<p class="all"><p/>
+
+CSS
+.all {
+    -webkit-user-select: all; user-select:all;
+}
+
+.all::selection {
+    background-color: var (--gin);
+    color: #e866ec;
+}
+
+This CSS code changes the color of the All selector
+.all::selection{
+    background-color: var(--gin);
+    color: #e866ec;
+}
+
+width: 100vw
+Look up how vw (better practice) is different from 100%
+-->
